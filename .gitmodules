@@ -1,3 +1,6 @@
 [submodule "modul-03/tugas/heinrich-wisesa/lib/forge-std"]
 	path = modul-03/tugas/heinrich-wisesa/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "modul-03/tugas/heinrich-wisesa/lib/openzeppelin-contracts"]
+	path = modul-03/tugas/heinrich-wisesa/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
