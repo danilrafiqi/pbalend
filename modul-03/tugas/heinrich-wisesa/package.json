@@ -1,0 +1,19 @@
+{
+  "name": "heinrich-wisesa",
+  "version": "1.0.0",
+  "description": "A comprehensive smart contract implementation designed to teach fundamental Solidity concepts through a real-world lending protocol example with dual-token markets and oracle integration.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pythnetwork/pyth-sdk-solidity": "^4.2.0"
+  }
+}
