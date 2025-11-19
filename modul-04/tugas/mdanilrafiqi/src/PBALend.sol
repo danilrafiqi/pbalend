@@ -394,7 +394,6 @@ contract PBALend {
         validAmount(amount) 
         whenNotPaused
     {
-        MarketData storage marketData = marketDatas[_getMarketKey(loanToken, collateralToken)];
         UserData storage userData = userDatas[msg.sender][_getMarketKey(loanToken, collateralToken)];
 
         _accrueInterest(loanToken, collateralToken);
@@ -437,7 +436,6 @@ contract PBALend {
         
         // Calculate fee (0.5% of amount)
         uint256 fee = amount * FLASH_LOAN_FEE / PERCENTAGE_DENOMINATOR;
-        uint256 amountDue = amount + fee;
         
         // Ensure contract has enough liquidity
         if (balanceBefore < amount) revert InsufficientLiquidity();
