@@ -27,8 +27,8 @@ contract PBALend {
     error InsufficientCollateral();
     error InsufficientShares();
     error NotOwner();
-    error Paused();
-    error NotPaused();
+    error ErrorPaused();
+    error ErrNotPaused();
 
     // =============================================================================
     // EVENTS - Essential for frontend integration and transaction tracking
@@ -151,12 +151,12 @@ contract PBALend {
     }
 
     modifier whenNotPaused() {
-        if (_paused) revert Paused();
+        if (_paused) revert ErrorPaused();
         _;
     }
 
     modifier whenPaused() {
-        if (!_paused) revert NotPaused();
+        if (!_paused) revert ErrNotPaused();
         _;
     }
 

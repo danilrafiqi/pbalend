@@ -4,3 +4,6 @@
 [submodule "modul-03/tugas/heinrich-wisesa/lib/openzeppelin-contracts"]
 	path = modul-03/tugas/heinrich-wisesa/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "modul-04/tugas/mdanilrafiqi/lib/openzeppelin-contracts"]
+	path = modul-04/tugas/mdanilrafiqi/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
